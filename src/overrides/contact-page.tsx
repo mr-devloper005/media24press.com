@@ -12,7 +12,7 @@ export function ContactPageOverride() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#7f60cf]">Contact Us</p>
           <h1 className="mt-2 text-4xl font-semibold">Talk to the Media24Press team</h1>
         </div>
-        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid gap-6">
           <div className="media24-card p-6">
             <form className="grid gap-4">
               <div className="grid gap-4 sm:grid-cols-2">
@@ -45,29 +45,6 @@ export function ContactPageOverride() {
                 </button>
               </div>
             </form>
-          </div>
-
-          <div className="space-y-4">
-            <div className="media24-card p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7f60cf]">Telephone Hours</p>
-              <p className="mt-3 text-sm text-[#4f437d]">Monday to Friday</p>
-              <p className="text-sm font-semibold text-[#28185f]">8:30am to 5:00pm Pacific (PDT)</p>
-            </div>
-            <div className="media24-card p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7f60cf]">Toll Free Telephone</p>
-              <p className="mt-3 text-sm font-semibold text-[#28185f]">+1 888-880-9539</p>
-              <p className="text-sm text-[#4f437d]">+1 646-777-5291</p>
-            </div>
-            <div className="media24-card p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7f60cf]">US Address</p>
-              <p className="mt-3 text-sm text-[#4f437d]">Suite 1400 - 500 Second Avenue</p>
-              <p className="text-sm text-[#4f437d]">Seattle, WA 98104</p>
-            </div>
-            <div className="media24-card p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#7f60cf]">Canada Address</p>
-              <p className="mt-3 text-sm text-[#4f437d]">Suite 203 - 901 West 3rd St.</p>
-              <p className="text-sm text-[#4f437d]">North Vancouver, BC V7P 3P9</p>
-            </div>
           </div>
         </div>
       </main>

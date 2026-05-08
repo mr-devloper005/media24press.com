@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { CalendarDays, Filter, Search } from 'lucide-react'
+import { Filter, Search } from 'lucide-react'
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
 import { fetchTaskPosts } from '@/lib/task-data'
@@ -128,14 +128,7 @@ export async function TaskListPageOverride({
                 {filtered.slice(0, 4).map((post) => (
                   <Link key={post.id} href={`/updates/${post.slug}`} className="block rounded-xl border border-[#eadfff] bg-white p-3 transition hover:bg-[#faf7ff]">
                     <p className="text-sm font-medium text-[#28185f]">{post.title}</p>
-                    <p className="mt-1 inline-flex items-center gap-2 text-xs text-[#7f60cf]">
-                      <CalendarDays className="h-3.5 w-3.5" />
-                      {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', {
-                        month: 'short',
-                        day: 'numeric',
-                        year: 'numeric',
-                      })}
-                    </p>
+
                   </Link>
                 ))}
               </div>
