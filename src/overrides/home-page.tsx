@@ -124,9 +124,7 @@ export async function HomePageOverride() {
                   Submit Press Release
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link href="/pricing" className="inline-flex items-center rounded-full border border-white/30 bg-white/10 px-5 py-3 text-sm font-semibold hover:bg-white/20">
-                  View Plans
-                </Link>
+
               </div>
             </div>
 
