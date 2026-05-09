@@ -9,7 +9,6 @@ export const NAVBAR_OVERRIDE_ENABLED = true
 
 const utilityLinks = [
   { label: 'Latest News', href: '/updates' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'About Us', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]
@@ -17,7 +16,6 @@ const utilityLinks = [
 const primaryLinks = [
   { label: 'Home', href: '/' },
   { label: 'News Releases', href: '/updates' },
-  { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ]

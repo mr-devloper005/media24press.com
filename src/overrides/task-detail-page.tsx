@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
-import { CalendarDays, Facebook, Linkedin, Mail, Twitter } from 'lucide-react'
+import { Facebook, Linkedin, Mail, Twitter } from 'lucide-react'
 import { NavbarShell } from '@/components/shared/navbar-shell'
 import { Footer } from '@/components/shared/footer'
 import { fetchTaskPostBySlug, fetchTaskPosts } from '@/lib/task-data'
@@ -46,14 +46,6 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
           </p>
           <div className="mt-5 flex flex-wrap items-center gap-4 text-sm text-white/75">
             <span>By {post.authorName || 'Media24Press Editorial Desk'}</span>
-            <span className="inline-flex items-center gap-2">
-              <CalendarDays className="h-4 w-4" />
-              {new Date(post.publishedAt || Date.now()).toLocaleDateString('en-US', {
-                month: 'long',
-                day: 'numeric',
-                year: 'numeric',
-              })}
-            </span>
           </div>
         </div>
       </section>
@@ -121,13 +113,6 @@ export async function TaskDetailPageOverride({ slug }: { task: TaskKey; slug: st
               {recent.map((item) => (
                 <Link key={item.id} href={`/updates/${item.slug}`} className="block rounded-xl border border-[#eadfff] bg-white p-3 hover:bg-[#faf7ff]">
                   <p className="text-sm font-semibold text-[#28185f]">{item.title}</p>
-                  <p className="mt-1 text-xs text-[#6f58b5]">
-                    {new Date(item.publishedAt || Date.now()).toLocaleDateString('en-US', {
-                      month: 'short',
-                      day: 'numeric',
-                      year: 'numeric',
-                    })}
-                  </p>
                 </Link>
               ))}
             </div>

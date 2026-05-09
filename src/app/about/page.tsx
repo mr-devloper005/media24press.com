@@ -33,9 +33,6 @@ export default function AboutPage() {
               Media24Press helps teams publish and distribute announcements with confidence. We combine clean editorial design, practical workflow, and scalable distribution support.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/pricing" className="rounded-full bg-[#3b14a7] px-5 py-2.5 text-sm font-semibold text-white hover:bg-[#5321d0]">
-                View Pricing
-              </Link>
               <Link href="/contact" className="rounded-full border border-[#d5c2ff] px-5 py-2.5 text-sm font-semibold text-[#3b14a7] hover:bg-[#f3ecff]">
                 Contact Team
               </Link>
